@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block body %}
+<!--data-url="https://api.github.com/users/wenzhixin/repos" -->
+<table id="table"
+       data-toggle="table"
+       data-toolbar="#toolbar"
+       data-classes="table table-hover table-condensed"
+       data-striped="true"
+       data-search="true"
+       data-show-refresh="true"
+       data-show-toggle="true"
+       data-show-export="true"
+       data-show-columns="true"
+       data-pagination="true"
+       data-page-list="[5, 10, 20, 50]">
+
+    <thead>
+    <tr>
+        <th class="col-xs-4" data-field="name" data-sortable="true" rowspan="2">名称</th>
+        <th class="col-xs-8" data-field="counttile" data-sortable="true" colspan="3">CountTitle</th>
+    </tr>
+    <tr>
+        <th class="col-xs-1" data-field="stargazers_count" data-sortable="true" rowspan="1">Stars</th>
+        <th class="col-xs-1" data-field="forks_count" data-sortable="true" rowspan="1">Forks</th>
+        <th class="col-xs-6" data-field="description" data-sortable="true" data-visible="true" rowspan="1">Description</th>
+    </tr>
+    </thead>
+
+</table>
+
+{% endblock %}

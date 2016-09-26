@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="container">
+    <h1>Agreements between ChinaMobile and Operators </h1>
+    <p>Use <code>+</code>  to expand detail view.</p>
+    
+    <table id="agreetable"
+       data-toggle="agreetable"
+       data-classes="table table-hover"
+       data-striped="true"
+       data-search="true"
+       data-show-refresh="true"
+       data-show-toggle="true"
+       data-show-export="true"
+       data-show-columns="true"
+       data-pagination="true"
+       data-page-list="[20,50,100]">
+    </table>
+</div>
+
+{% endblock %}
